@@ -21,10 +21,22 @@ public class Matricula {
     private String montopagar;
 
     @ManyToOne
+    @JoinColumn(name = "idusuario")
+    private Usuario usuario;
+
+    @ManyToOne
     @JoinColumn(name = "idalumno")
     private Alumno alumno;
 
     @ManyToOne
     @JoinColumn(name = "idempleado")
     private Empleado empleado;
+
+    @ManyToOne
+    @JoinColumn(name = "idcurso")
+    private Curso curso;
+
+    @ManyToOne
+    @JoinColumn(name = "idgrado")
+    private Grado grado;
 }
