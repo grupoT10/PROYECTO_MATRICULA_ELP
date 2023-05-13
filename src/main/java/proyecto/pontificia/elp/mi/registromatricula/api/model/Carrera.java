@@ -11,8 +11,10 @@ public class Carrera {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="idcarrera")
     private Integer id;
-    private Integer nombre;
+
+    private String nombre;
+
     @ManyToOne
-    @JoinColumn(name = "idtipoinstitución")
+    @JoinColumn(name = "idtipoinstitucion")
     private Tipoinstitucion idtipoinstitucion;
 }

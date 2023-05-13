@@ -21,7 +21,7 @@ public class Carreracontroller {
         this.carrerarepository = carrerarepository;
     }
     @GetMapping("/lis")
-    Page<Carrera> index(@PageableDefault(sort = "id",size=10) Pageable pageable){
+    Page<Carrera> index(@PageableDefault(sort = "nombre",size=10) Pageable pageable){
         return carrerarepository.findAll(pageable);
     }
 
@@ -39,7 +39,7 @@ public class Carreracontroller {
     }
 
     @PutMapping("/act/{id}")
-    Carrera actualizar(@PathVariable Integer id, @RequestBody Carrera carreraDto){
+    Carrera actualizar(@PathVariable Integer id, @RequestBody CarreraDto carreraDto){
         Carrera carrera=carrerarepository
                 .findById(id)
                 .orElseThrow(EntityNotFoundException::new);

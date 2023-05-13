@@ -13,7 +13,7 @@ import proyecto.pontificia.elp.mi.registromatricula.api.model.Tipoinstitucion;
 import proyecto.pontificia.elp.mi.registromatricula.api.repository.Tipoinstitucionrepository;
 
 @RestController
-@RequestMapping("/api/admin/apoderado")
+@RequestMapping("/api/admin/tipoinstitucion")
 
 public class Tipoinstitucioncontroller {
         private final Tipoinstitucionrepository tipoinstitucionrepository;
@@ -23,7 +23,7 @@ public class Tipoinstitucioncontroller {
         }
 
     @GetMapping("/lis")
-        Page<Tipoinstitucion> index(@PageableDefault(sort = "carrera",size=5) Pageable pageable){
+        Page<Tipoinstitucion> index(@PageableDefault(sort = "nombre",size=5) Pageable pageable){
             return tipoinstitucionrepository.findAll(pageable);
         }
 

@@ -18,6 +18,6 @@ public class Curso {
     private String ciclo;
 
     @ManyToOne
-    @JoinColumn(name = "iddondete")
+    @JoinColumn(name = "iddocente")
     private Docente iddocente;
 }

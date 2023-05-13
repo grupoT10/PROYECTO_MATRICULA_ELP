@@ -5,6 +5,7 @@ import lombok.Data;
 
 @Data
 public class DocenteDto {
+
     @Size(min = 1,max = 25)
     private String coddocente;
 

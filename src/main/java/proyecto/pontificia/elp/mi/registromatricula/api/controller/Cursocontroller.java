@@ -9,6 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import proyecto.pontificia.elp.mi.registromatricula.api.controller.Dto.CursoDto;
+import proyecto.pontificia.elp.mi.registromatricula.api.model.Curso;
+import proyecto.pontificia.elp.mi.registromatricula.api.repository.Cursorepository;
 
 @RestController
 @RequestMapping("/api/admin/curso")
@@ -20,7 +22,7 @@ public class Cursocontroller {
      }
 
      @GetMapping("/lis")
-     Page<Curso> index(@PageableDefault(sort = "codalumno", size = 5) Pageable pageable) {
+     Page<Curso> index(@PageableDefault(sort = "codcurso", size = 5) Pageable pageable) {
          return cursorepository.findAll(pageable);
      }
 

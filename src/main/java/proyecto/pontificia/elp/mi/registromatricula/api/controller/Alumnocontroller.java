@@ -23,7 +23,7 @@ public class Alumnocontroller {
     }
 
     @GetMapping("/lis")
-    Page<Alumno> index(@PageableDefault(sort = "id",size=5) Pageable pageable){
+    Page<Alumno> index(@PageableDefault(sort = "codalumno",size=5) Pageable pageable){
         return alumnorepository.findAll(pageable);
     }
 

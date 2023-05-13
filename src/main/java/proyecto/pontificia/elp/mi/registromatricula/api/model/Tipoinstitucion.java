@@ -9,6 +9,7 @@ public class Tipoinstitucion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="idtipoinstitucion")
     private Integer id;
+
     private String nombre;
 
 }

@@ -7,7 +7,6 @@ import lombok.Data;
 @Data
 public class ApoderadoDto {
 
-    @NotBlank
     @Size(min = 3 ,max = 25)
     private String codapoderado;
 

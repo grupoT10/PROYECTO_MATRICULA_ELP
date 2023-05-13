@@ -18,13 +18,24 @@ public class Matricula {
 
     private String turno;
 
-    private Date fmatricula;
+    private Date fechamatricula;
 
     private String montopagar;
 
-
     @ManyToOne
     @JoinColumn(name = "idalumno")
-    private Alumno alumno;
+    private Alumno idalumno;
+
+    @ManyToOne
+    @JoinColumn(name = "idcurso")
+    private Curso idcurso;
+
+    @ManyToOne
+    @JoinColumn(name = "idcarrera")
+    private Carrera idcarrera;
+
+    @ManyToOne
+    @JoinColumn(name = "idempleado")
+    private Empleado idempleado;
 
 }
