@@ -6,7 +6,6 @@ import lombok.Data;
 
 @Data
 public class UsuarioDto {
-    @NotBlank
     @Size(min = 1,max = 25)
     private String codusuario;
 

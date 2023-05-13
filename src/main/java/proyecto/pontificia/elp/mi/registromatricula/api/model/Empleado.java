@@ -11,11 +11,14 @@ public class Empleado {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idempleado")
     private Integer id;
+
+    private String codempleado;
+
     private String nombre;
 
-    private String apellido_pat;
+    private String apellidopat;
 
-    private String apellido_mat;
+    private String apellidomat;
 
     private String dni;
 
@@ -23,8 +26,7 @@ public class Empleado {
 
     private String cargo;
 
-    private String codempleado;
     @ManyToOne
-    @JoinColumn(name = "idusuario")
+    @JoinColumn(name = "idusuariot")
     private Usuario idusuario;
 }
