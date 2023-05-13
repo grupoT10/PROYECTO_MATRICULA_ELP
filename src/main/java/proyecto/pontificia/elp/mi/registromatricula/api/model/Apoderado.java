@@ -12,6 +12,8 @@ public class Apoderado {
     @Column(name = "idapoderado")
     private Integer id;
 
+    private String codapoderado;
+
     private String padre;
 
     private String trabajopat;
