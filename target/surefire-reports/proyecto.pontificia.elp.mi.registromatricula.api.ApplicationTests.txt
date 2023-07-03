@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: proyecto.pontificia.elp.mi.registromatricula.api.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.675 s - in proyecto.pontificia.elp.mi.registromatricula.api.ApplicationTests
